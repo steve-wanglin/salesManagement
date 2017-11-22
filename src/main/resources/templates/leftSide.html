@@ -1,0 +1,38 @@
+<nav th:fragment="left-side" id="sidebar" role="navigation" class="navbar-default navbar-static-side" style="min-height: 100%;">
+    <div class="sidebar-collapse menu-scroll" style="height: auto;">
+        <ul id="side-menu" class="nav">
+            <li class="user-panel">
+                <div class="thumb"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" alt="" class="img-circle">
+                </div>
+                <div class="info">
+                    <p>后台管理员</p>
+                    <ul class="list-inline list-unstyled">
+                        <li><a href="extra-profile.html" data-hover="tooltip" title="" data-original-title="Profile"><i class="fa fa-user"></i></a>
+                        </li>
+                        <li><a href="email-inbox.html" data-hover="tooltip" title="" data-original-title="Mail"><i class="fa fa-envelope"></i></a>
+                        </li>
+                        <li><a href="#" data-hover="tooltip" title="" data-toggle="modal" data-target="#modal-config" data-original-title="Setting"><i class="fa fa-cog"></i></a>
+                        </li>
+                        <li><a href="extra-signin.html" data-hover="tooltip" title="" data-original-title="Logout"><i class="fa fa-sign-out"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+
+            <li class=""><a href="#"><i class="fa fa-th-list fa-fw"><div class="icon-bg bg-blue"></div></i><span class="menu-title">订单管理</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" style="height: 0px;">
+                    <li><a href="table-basic.html"><i class="fa fa-th-large"></i><span class="submenu-title"></span>订单汇总</a>
+                    </li>
+                    <li><a href="table-responsive.html"><i class="fa fa-tablet"></i><span class="submenu-title">修改订单</span></a>
+                    </li>
+                    <li><a href="table-action.html"><i class="fa fa-tencent-weibo"></i><span class="submenu-title">打印订单</span></a>
+                    </li>
+                    <li><a href="table-filter.html"><i class="fa fa-filter"></i><span class="submenu-title">生成报表</span></a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
