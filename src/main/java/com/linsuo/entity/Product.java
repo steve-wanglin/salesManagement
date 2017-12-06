@@ -1,12 +1,16 @@
 package com.linsuo.entity;
 
-//import javax.persistence.Column;
-//import javax.persistence.GeneratedValue;
-//import javax.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 /**
  * Created by stevewang on 18/10/2017.
  */
+@Entity
+@Table(name = "product")
 public class Product {
 
     public char getGender() {
@@ -41,8 +45,8 @@ public class Product {
         this.price = price;
     }
 
-//    @Id
-//    @GeneratedValue
+    @Id
+    @GeneratedValue
     private int id;
 //    @Column(nullable = false)
     private char gender;
@@ -55,4 +59,27 @@ public class Product {
 //    @Column(nullable = false)
     private double price;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getShortDesc() {
+        return shortDesc;
+    }
+
+    public void setShortDesc(String shortDesc) {
+        this.shortDesc = shortDesc;
+    }
+
+    private String name;
+    private String shortDesc;
+
+    @Override
+    public String toString() {
+        return name+": "+shortDesc+ ": "+weight+" : "+gender+ " : "+type+ " : "+ price;
+    }
 }

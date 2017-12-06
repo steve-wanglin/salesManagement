@@ -1,9 +1,6 @@
 package com.linsuo.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
@@ -24,7 +21,13 @@ public class Order {
     private Date createdDate;
     private Date updateDate;
 
-//    private List<OrderItemDetail> orderDetail;
+
+//    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "order")
+//    private List<Product> productList;
     private double orderAmt;
     private double transactionAmt;
+    @OneToOne
+    private Customer customer;
+
+
 }

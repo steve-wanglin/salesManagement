@@ -38,19 +38,10 @@ public class Customer {
         this.mobileNumber = mobileNumber;
     }
 
-    public Double getVolumeAmount() {
-        return VolumeAmount;
-    }
-
-    public void setVolumeAmount(Double volumeAmount) {
-        VolumeAmount = volumeAmount;
-    }
-
     @Id
     @GeneratedValue
     private Long id;
     @Column(nullable = false)
     private String name;
     private Long mobileNumber;
-    private Double VolumeAmount;
 }
